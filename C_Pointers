@@ -1,0 +1,24 @@
+int main()
+{
+
+
+    int variable1 = 20;
+    int variable2 = 30;
+
+    int *integer_pointer1; //This pointer is pointing something. It cloud only point an address of variable or array.
+    int *integer_pointer2; //Same thing goes here... *VARIABLE - Pointer.
+
+    integer_pointer1 = &variable1; //We have to assign our pointer to the variable's address. pointer = &. & - means address.
+    integer_pointer2 = &variable2;
+
+
+   printf("Address of 'variable1' is: %x.\n", &variable1); //It will print the address of variable
+   printf("Address stored in 'integer_pointer1': %x.\n", integer_pointer1); //It will print the address stored in the pointer
+   printf("Value of '&variable1': %d\n", *&variable1); //It will print the value of variable.
+
+
+   printf("Value of 'variable1' + 'variable2' is %d , %d", *integer_pointer1 + *integer_pointer2); //We can mathematically do anything with the values in the addresses, but first we have to access them
+   //with the pointers
+
+    return 0;
+}
