@@ -1,0 +1,20 @@
+//Comparing 3 digits. If they are equal to each other, the program will print "Yes", else "No"
+
+int main()
+{
+
+   int a, b, c;
+   scanf("%d", &a);
+   scanf("%d", &b);
+   scanf("%d", &c);
+
+   if(a == b || b == c || c == a){
+    printf("Yes");
+   }else{
+    printf("No");
+   }
+
+
+
+    return 0;
+}
